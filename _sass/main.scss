@@ -24,7 +24,7 @@ $black:    #000 !default;
 $primary:       $blue ;
 $secondary:     #474D5A ;
 $success:       $green ;
-$info:          $cyan ;
+$info:          #0189C7 ;
 $warning:       $yellow ;
 $danger:        $red ;
 $light:         $gray-100 ;
@@ -110,7 +110,10 @@ $btn-border-radius-sm: 100px;
 .footer {
    margin-top: 1%;
    background-color: #F0F0F0;
-   
+   ul {
+      list-style: none;
+      
+   }
    img {
       width: 32%;
       display: block;
@@ -118,11 +121,24 @@ $btn-border-radius-sm: 100px;
       max-width: 300px;
    }
    h5 {
-      width: 30%;
+      width: 50%;
       display: block;
       margin: auto;
       text-align: center;
       font-size: medium;
+   }
+   h6 {
+      width: 50%;
+      display: block;
+      text-align: start;
+      font-size: small;
+   }
+   a {
+      text-decoration: none;
+      color: gray;
+   }
+   a:hover{
+      color: gray;
    }
    .d-flex {
       margin-top: 7px;
@@ -163,10 +179,21 @@ $btn-border-radius-sm: 100px;
    color:white;
 }
 
+
 .link{
    color:$gray-900;
    text-decoration:none;
    }
 .link:hover{
    color:$gray-600;
+
+.card{
+   h2 {
+      font-size:2.5rem;
+      color:$white;
+      text-align: center;
+      height:3.5rem;
+      margin:0;
+   }
+
 }
