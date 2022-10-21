@@ -179,6 +179,14 @@ $btn-border-radius-sm: 100px;
    color:white;
 }
 
+
+.link{
+   color:$gray-900;
+   text-decoration:none;
+   }
+.link:hover{
+   color:$gray-600;
+
 .card{
    h2 {
       font-size:2.5rem;
@@ -187,4 +195,5 @@ $btn-border-radius-sm: 100px;
       height:3.5rem;
       margin:0;
    }
+
 }
