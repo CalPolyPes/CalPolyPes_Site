@@ -1,8 +1,8 @@
 #List of dropdown titles
-- name: MESA
+- name: Calendar
   link: /comingsoon.html
   #link: /MESA/
-- name: Icebreakers
+- name: Projects
   link: /comingsoon.html
-- name: Code B
+- name: Meetings
   link: /codeB/
