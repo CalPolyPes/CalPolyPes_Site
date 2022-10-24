@@ -5,68 +5,36 @@ permalink: /about/
 pic: about
 color: '#474D5A'
 ---
-
-  <div class="container d-flex justify-content-center">
-    <div class="my-5 p-5 rounded-3 bg-light">
-      <div class="card mb-3 border-0">
-        <div class="row g-0">
-          <div class="col-lg-6 col-12">
-            <img src="../assets/images/about1.png" class="img-fluid rounded-start" alt="Minh and Kevin Working on a controller">
-          </div>
-          <div class="col-lg-6 col-12">
-            <div class="my-auto bg-light h-100 text-center">
-              <h5 class="card-title">What We Do</h5>
-              <p class="mtlist card-text">
-              STEM club is the best place at Bolsa Grande High School to explore interest and develop technical skills in the STEM field. Members get the opportunity to compete in engaging Science, Technology, Engineering, and Math based competitions in groups, developing their social and technical skills. 
-              </p>
-              <!-- <button type="button" class="btn btn-primary rounded-pill">Learn More <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                </svg>
-              </button> -->
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card mb-3 border-0">
-        <div class="row g-0">
-            <div class="position-relative col-lg-6 col-12">
-                <div class="card-body bg-light h-100 text-center">
-                    <h5 class="card-title">Club Meetings</h5>
-                    <p class="card-text">
-                      <ul class="mtlist">
-                        <li>
-                          Interest meeting on September 16th in room 325 during lunch!
-                        </li>
-                        <li>STEM holds bi-weekly meetings on Saturdays from 9:00 A.M. to 11:00 A.M. in Room 405.
-                        </li>
-                        <li>We may have extra throughout the school year to allow for extra time to work on projects as well.
-                        </li>
-                        <li>
-                          During meetings, we will either be doing STEM activities, working on projects, or hosting informative workshops.
-                        </li>
-                      </ul>
-                    </p>
-                </div>
-            </div>
-            <div class="col-lg-6 col-12">
-              <img src="../assets/images/about2.png" class="img-fluid rounded-start" alt="STEM Meeting in Room 325">
-            </div>
-        </div>
-      </div>
-      <h1 class="text-center">Contact Us</h1>
-      {% for contact in site.data.contacts %}    
-      <div class="row">
-        <div class="col-5">
-          <h3 class="text-end">{{contact.name}}</h3>
-        </div>
-        <div class="col">
-          <a class="link" href="mailto:{{contact.email}}"><h4 class="fw-normal">Email: {{contact.email}}</h4></a>
-        </div>
-      </div>
-      {% endfor %}
+<div class="container">
+  <div class="row mb-5 text-center">
+    <div class="col-12 col-sm-6 my-auto pt-5">
+      <img class="img-fluid" src="../assets/images/photos/IMG_0947.JPEG">
+    </div>
+    <div class="col-12 col-sm-6 my-auto pt-5">
+        <h1>More about Us</h1>
+        <p>Bolsa Grande STEM strives to offer students a learning environment and get hands-on experience in STEM fields, be it by constructing engineering projects, coding complex algorithms, or participating in exhilarating and meaningful icebreakers—all with the goal to excel in those fields.</p>
+        <a href="/about" class="alink shadow btn btn-primary rounded-pill px-4 py-2">Learn More
+          <!-- arrow icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 8 8">
+            <path class="arrow" d="M5 0v2h-5v1h5v2l3-2.53-3-2.47z" transform="translate(0 1)"/>
+          </svg>
+        </a>
     </div>
   </div>
+</div>
+
+{% for contact in site.data.contacts %}    
+<div class="row">
+  <div class="col-5">
+    <h3 class="text-end">{{contact.name}}</h3>
+  </div>
+  <div class="col">
+    <a class="link" href="mailto:{{contact.email}}"><h4 class="fw-normal">Email: {{contact.email}}</h4></a>
+  </div>
+</div>
+{% endfor %}
+
+
 
 
   <div style="background-color: #004020;">
