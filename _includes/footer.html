@@ -1,22 +1,22 @@
 <!-- potential code for a footer -->
 <div class="footer pt-3">
     <div class="container">
-        <div class="row w-100 justify-content-center gx-5">
+        <div class="row">
             <div class="col-sm">
-                <h3 class="d-flex flex-row justify-content-center text-center">Cal Poly PES</h3>
-                <div class="d-flex flex-row justify-content-center"><a href="https://www.facebook.com/groups/bghsstem" target="_blank" class="p-2"><img src="/assets/images/fb-icon.png"></a><a href="https://www.instagram.com/bghs_stem_club/" target="_blank" class="p-2"><img src="/assets/images/ig-icon.png"></a></div>
+                <h3 class="d-flex justify-content-center text-center">Cal Poly PES</h3>
+                <div class="d-flex justify-content-center"><a href="https://www.facebook.com/groups/bghsstem" target="_blank" class="p-2"><img src="/assets/images/fb-icon.png"></a><a href="https://www.instagram.com/bghs_stem_club/" target="_blank" class="p-2"><img src="/assets/images/ig-icon.png"></a></div>
             </div> 
             <div class="col-sm">
                 <ul>
                     {% for item in site.data.footer limit:3 %}
-                    <li class="d-flex justify-content-center"><h6 class="fs-4 d-flex justify-content-center"><a href="{{ item.href }}"> {{ item.title}} </a></h6></li>
+                    <li class="d-flex justify-content-center"><h6 class="fs-4 text-center"><a href="{{ item.href }}"> {{ item.title}} </a></h6></li>
                     {% endfor %}
                 </ul>
             </div>
             <div class="col-sm">
                 <ul>
                     {% for item in site.data.footer limit:3 offset:continue %}
-                    <li class="d-flex justify-content-center"><h6 class="fs-4 d-flex justify-content-center"><a href="{{ item.href }}"> {{ item.title }} </a></h6></li>
+                    <li class="d-flex justify-content-center"><h6 class="fs-4 text-center"><a href="{{ item.href }}"> {{ item.title }} </a></h6></li>
                     {% endfor %}
                 </ul>
             </div>
