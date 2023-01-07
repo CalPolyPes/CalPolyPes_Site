@@ -12,124 +12,127 @@ color: '#474D5A'
     </div>
     <div class="col-12 col-sm-6 my-auto pt-5">
         <h1>More about Us</h1>
-        <p>Bolsa Grande STEM strives to offer students a learning environment and get hands-on experience in STEM fields, be it by constructing engineering projects, coding complex algorithms, or participating in exhilarating and meaningful icebreakers—all with the goal to excel in those fields.</p>
-        <a href="/about" class="alink shadow btn btn-primary rounded-pill px-4 py-2">Learn More
-          <!-- arrow icon -->
+        <p>The student chapter of the Power and Energy Society at Cal Poly San Luis Obispo strives to provide its members with knowledge and experience with technological developments in the electric power industry. Our goal is to develop the professionalism required for future internship and employment opportunities. We provide educational opportunities such as industry tours, information sessions, and technical talks. </p>
+        <!-- <a href="/about" class="alink shadow btn btn-primary rounded-pill px-4 py-2">Learn More
+          arrow icon
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 8 8">
             <path class="arrow" d="M5 0v2h-5v1h5v2l3-2.53-3-2.47z" transform="translate(0 1)"/>
           </svg>
-        </a>
+        </a> -->
     </div>
   </div>
 </div>
 
+<div class="container my-5">
+  <h1 class="text-center mb-5">Contact Info </h1>
 {% for contact in site.data.contacts %}    
-<div class="row">
-  <div class="col-5">
-    <h3 class="text-end">{{contact.name}}</h3>
+
+  <div class="row">
+    <div class="col-md-6">
+      <h4 class="text-center">{{contact.name}}</h3>
+    </div>
+    <div class="col-md-6">
+      <a class="link" href="mailto:{{contact.email}}"><h5 class="fw-normal">Email: {{contact.email}}</h4></a>
+    </div>
   </div>
-  <div class="col">
-    <a class="link" href="mailto:{{contact.email}}"><h4 class="fw-normal">Email: {{contact.email}}</h4></a>
+{% endfor %}
+</div>
+
+
+
+
+<div style="background-color: #004020;">
+  <div class="container text-white py-5">
+    <div class="row flex-wrap text-center justify-content-center">
+
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="offCard"> 
+          <h5 class="pt-2">Andrew Kargol</h5>
+          <div class="imgcontainer">
+            <img class="card-img" src="../assets/images/officerPhotos/Andrew.JPG" alt="Andrew Kargol">
+            <h6 class="offCardsub">President</h6>
+          </div>
+          <p class="card-text p-4">Hello everyone! My name is Andrew Kargol, and I am the current president of Cal Poly SLO’s Power and Energy Society. I am a fifth-year Electrical Engineering student pursuing my master’s degree with an emphasis in Power Systems. As club president my goal is to give you the skills, knowledge, and hands on experience to succeed in a career in power. I’m really excited to share the events, projects, and opportunities we have prepared for this year with you! I am looking forward to seeing you at one of our weekly meetings!</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="offCard"> 
+          <h5 class="pt-2">Dr. P</h5>
+          <div class="imgcontainer">
+            <img class="card-img" src="../assets/images/officerPhotos/" alt="">
+            <h6 class="offCardsub ">Advisor</h6>
+          </div>
+          <p class="card-text p-4">Bolsa Grande STEM Club, formerly known as MESA Club, is a campus organization that provides students an opportunity to explore and apply their Science, Technology, Engineering, and Math knowledge and skills beyond their classrooms. If you are interested in joining our club and competing with us in the upcoming school year, seek one of the officers and sign up.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="offCard"> 
+          <h5 class="pt-2">Alec</h5>
+          <div class="imgcontainer">
+            <img class="card-img" src="../assets/images/officerPhotos/Alec.JPG" alt="Alec">
+            <h6 class="offCardsub ">Vice-President</h6>
+          </div>
+          <p class="card-text p-4">Hello everyone! I am the current VP of the club. I hope to be an inspiration to you all just as STEM has been for me. Join our club for some fun! Competitions and seriousness aside, I want to share our experiences in STEM and teach skills to you. See you in the workshop!</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="offCard"> 
+          <h5 class="pt-2">Carlo</h5>
+          <div class="imgcontainer">
+            <img class="card-img" src="../assets/images/officerPhotos/Carlo.jpeg" alt="Carlo">
+            <h6 class="offCardsub ">Treasurer</h6>
+          </div>
+          <p class="card-text p-4">Hi everyone! I am the Treasurer of the Power and Energy Society club. My area of focus I am studying for is in power distribution and renewable energy. It is important to me that I am passionate in the field I want to work in: What's better than bringing light to people's homes?</p>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="offCard"> 
+          <h5 class="pt-2">Thomas To</h5>
+          <div class="imgcontainer">
+            <img class="card-img" src="../assets/images/officerPhotos/Thomas.JPG" alt="Thomas To">
+            <h6 class="offCardsub">Website Manager</h6>
+          </div>
+          <p class="card-text p-4">Hi everyone! I am a first year interested in studying power in order to go into the renewable energy field! I joined PES in order to explore all the different opportunities in power and energy, as well as to network with both upperclassman as well as many notable companies that PES is in contact with. I am excited to be able to contribute to the club!</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="offCard"> 
+          <h5 class="pt-2">Justin</h5>
+          <div class="imgcontainer">
+            <img class="card-img" src="../assets/images/officerPhotos/Justin.JPG" alt="Justin">
+            <h6 class="offCardsub">Secretary</h6>
+          </div>
+          <p class="card-text p-4">Hi guys :) I’m the STEM secretary, Adrian Vo. STEM is very cool so it is definitely worth joining. I’m looking forward to working with everyone this year. Let’s have some fun!</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="offCard"> 
+          <h5 class="pt-2">Kian </h5>
+          <div class="imgcontainer">
+            <img class="card-img" src="../assets/images/officerPhotos/Kian.JPG" alt="Kian">
+            <h6 class="offCardsub">Secretary</h6>
+          </div>
+          <p class="card-text p-4">Hi guys :) I’m the STEM secretary, Adrian Vo. STEM is very cool so it is definitely worth joining. I’m looking forward to working with everyone this year. Let’s have some fun!</p>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="offCard"> 
+          <h5 class="pt-2">Niel</h5>
+          <div class="imgcontainer">
+            <img class="card-img" src="../assets/images/officerPhotos/Neil.JPG" alt="Adrian Vo">
+            <h6 class="offCardsub">Secretary</h6>
+          </div>
+          <p class="card-text p-4">Hi guys :) I’m the STEM secretary, Adrian Vo. STEM is very cool so it is definitely worth joining. I’m looking forward to working with everyone this year. Let’s have some fun!</p>
+        </div>
+      </div>    
+
+    </div>  
   </div>
 </div>
-{% endfor %}
-
-
-
-
-  <div style="background-color: #004020;">
-    <div class="container text-white py-5">
-      <div class="row flex-wrap text-center">
-
-        <div class="col-lg-4 col-md-6 mb-5">
-          <div class="offCard"> 
-            <h5 class="pt-2">Andrew Kargol</h5>
-            <div class="imgcontainer">
-              <img class="card-img" src="../assets/images/thomas1.png" alt="Thomas To">
-              <h6 class="offCardsub">President</h6>
-            </div>
-            <p class="card-text p-4">Hey everyone! I am the current President of STEM Club at Bolsa Grande High School. STEM has been such an inspiration for me, and I am so glad that I can contribute back to the club! My goal is to share all of the knowledge STEM Club has with all of the club members and as many people on campus as we can reach! I look forward to serving as your President for another great year of STEM!.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-5">
-          <div class="offCard"> 
-            <h5 class="pt-2">Dr. P</h5>
-            <div class="imgcontainer">
-              <img class="card-img" src="../assets/images/Tonthat1.png" alt="Mr. Tonthat">
-              <h6 class="offCardsub ">Advisor</h6>
-            </div>
-            <p class="card-text p-4">Bolsa Grande STEM Club, formerly known as MESA Club, is a campus organization that provides students an opportunity to explore and apply their Science, Technology, Engineering, and Math knowledge and skills beyond their classrooms. If you are interested in joining our club and competing with us in the upcoming school year, seek one of the officers and sign up.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-5">
-          <div class="offCard"> 
-            <h5 class="pt-2">Alec</h5>
-            <div class="imgcontainer">
-              <img class="card-img" src="../assets/images/kevin1.png" alt="Kevin Mach">
-              <h6 class="offCardsub ">Vice-President</h6>
-            </div>
-            <p class="card-text p-4">Hello everyone! I am the current VP of the club. I hope to be an inspiration to you all just as STEM has been for me. Join our club for some fun! Competitions and seriousness aside, I want to share our experiences in STEM and teach skills to you. See you in the workshop!</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-5">
-          <div class="offCard"> 
-            <h5 class="pt-2">Carlo</h5>
-            <div class="imgcontainer">
-              <img class="card-img" src="../assets/images/officerPhotos/Carlo.jpeg" alt="James Huynh">
-              <h6 class="offCardsub ">Treasurer</h6>
-            </div>
-            <p class="card-text p-4">Hi everyone! I am the Treasurer of the Power and Energy Society club. My area of focus I am studying for is in power distribution and renewable energy. It is important to me that I am passionate in the field I want to work in: What's better than bringing light to people's homes?</p>
-          </div>
-        </div>
-        
-        <div class="col-lg-4 col-md-6 mb-5">
-          <div class="offCard"> 
-            <h5 class="pt-2">Thomas To</h5>
-            <div class="imgcontainer">
-              <img class="card-img" src="../assets/images/sean.jpg" alt="Sean Huynh">
-              <h6 class="offCardsub">Website Manager</h6>
-            </div>
-            <p class="card-text p-4">Hi everyone! I am a first year interested in studying power in order to go into the renewable energy field! I joined PES in order to explore all the different opportunities in power and energy, as well as to network with both upperclassman as well as many notable companies that PES is in contact with. I am excited to be able to contribute to the club!</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-5">
-          <div class="offCard"> 
-            <h5 class="pt-2">Justin</h5>
-            <div class="imgcontainer">
-              <img class="card-img" src="../assets/images/adrian.jpg" alt="Adrian Vo">
-              <h6 class="offCardsub">Secretary</h6>
-            </div>
-            <p class="card-text p-4">Hi guys :) I’m the STEM secretary, Adrian Vo. STEM is very cool so it is definitely worth joining. I’m looking forward to working with everyone this year. Let’s have some fun!</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-5">
-          <div class="offCard"> 
-            <h5 class="pt-2">Kian </h5>
-            <div class="imgcontainer">
-              <img class="card-img" src="../assets/images/adrian.jpg" alt="Adrian Vo">
-              <h6 class="offCardsub">Secretary</h6>
-            </div>
-            <p class="card-text p-4">Hi guys :) I’m the STEM secretary, Adrian Vo. STEM is very cool so it is definitely worth joining. I’m looking forward to working with everyone this year. Let’s have some fun!</p>
-          </div>
-        </div>
-        
-        <div class="col-lg-4 col-md-6 mb-5">
-          <div class="offCard"> 
-            <h5 class="pt-2">Nial</h5>
-            <div class="imgcontainer">
-              <img class="card-img" src="../assets/images/adrian.jpg" alt="Adrian Vo">
-              <h6 class="offCardsub">Secretary</h6>
-            </div>
-            <p class="card-text p-4">Hi guys :) I’m the STEM secretary, Adrian Vo. STEM is very cool so it is definitely worth joining. I’m looking forward to working with everyone this year. Let’s have some fun!</p>
-          </div>
-        </div>
-        
-        
-  </div>  
-
-  

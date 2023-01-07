@@ -3,9 +3,9 @@
   link: /
 - name: About
   link: /about/
-- name: Calendar
-  link: /comingsoon.html
-- name: Projects
-  link: /comingsoon.html
-- name: Meetings
-  link: /codeB/
+# - name: Calendar
+#   link: /comingsoon.html
+# - name: Projects
+#   link: /comingsoon.html
+# - name: Meetings
+#   link: /codeB/
