@@ -1,13 +1,11 @@
 
 - title: Home
   href: /
-- title: Home
-  href: 
 - title: About
   href: /about/
-- title: Calendar
-  href: 
-- title: Projects
-  href: /codeB/
-- title: Meetings
-  href:
+# - title: Calendar
+#   href: /calendar/
+# - title: Projects
+#   href: /projects/
+# - title: Meetings
+#   href: /meetings/

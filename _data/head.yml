@@ -1,19 +1,4 @@
-activities:
-      img: activities.png
-      name: Activities
-codeB: 
-      img: codeB.jpg
-      name: Code B
 about:
-      img: activities.png
+      img: photos/header.JPEG
       name: About
-      description: UCI MESA Preliminary 2020
-news: 
-      img: codeB.jpg
-      name: News
-mesa:
-      img: activities.png
-      name: MESA
-icebreakers: 
-      img: codeB.jpg
-      name: Icebreakers
+      description: Meetings every Thursday from 11am to 12pm. Free food!
