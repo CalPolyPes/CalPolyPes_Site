@@ -3,8 +3,8 @@
   link: /
 - name: About
   link: /about/
-# - name: Calendar
-#   link: /comingsoon.html
+- name: Calendar
+  link: /calendar
 # - name: Projects
 #   link: /comingsoon.html
 # - name: Meetings
