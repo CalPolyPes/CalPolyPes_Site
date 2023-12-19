@@ -44,19 +44,19 @@ color: '#474D5A'
 <div style="background-color: #004020;">
   <div class="container text-white py-5">
     <div class="row flex-wrap text-center justify-content-center">
-
-      <div class="col-lg-4 col-md-6 mb-5">
-        <div class="offCard"> 
-          <h5 class="pt-2">Andrew Kargol</h5>
-          <div class="imgcontainer">
-            <img class="card-img" src="../assets/images/officerPhotos/Andrew.JPG" alt="Andrew Kargol">
-            <h6 class="offCardsub">President</h6>
+      {% for officer in site.data.officers %}
+        <div class="col-lg-4 col-md-6 mb-5">
+          <div class="offCard"> 
+            <h5 class="pt-2">{{officer.name}}</h5>
+            <div class="imgcontainer">
+              <img class="card-img" src="../assets/images/officerPhotos/{{officer.image}}" alt="{{officer.name}}">
+              <h6 class="offCardsub">{{officer.position}}</h6>
+            </div>
+            <p class="card-text p-4">{{officer.description}}</p>
           </div>
-          <p class="card-text p-4">Hello everyone! My name is Andrew Kargol, and I am the current president of Cal Poly SLO’s Power and Energy Society. I am a fifth-year Electrical Engineering student pursuing my master’s degree with an emphasis in Power Systems. As club president my goal is to give you the skills, knowledge, and hands on experience to succeed in a career in power. I’m really excited to share the events, projects, and opportunities we have prepared for this year with you! I am looking forward to seeing you at one of our weekly meetings!</p>
         </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 mb-5">
+      {% endfor %}
+      <!-- <div class="col-lg-4 col-md-6 mb-5">
         <div class="offCard"> 
           <h5 class="pt-2">Dr. Majid Poshtan</h5>
           <div class="imgcontainer">
@@ -74,7 +74,7 @@ color: '#474D5A'
             <img class="card-img" src="../assets/images/officerPhotos/Alec.JPG" alt="Alec">
             <h6 class="offCardsub ">Vice-President</h6>
           </div>
-          <p class="card-text p-4">Hello everyone! I am the current VP of the club. I hope to be an inspiration to you all just as STEM has been for me. Join our club for some fun! Competitions and seriousness aside, I want to share our experiences in STEM and teach skills to you. See you in the workshop!</p>
+          <p class="card-text p-4"></p>
         </div>
       </div>
 
@@ -131,7 +131,7 @@ color: '#474D5A'
           </div>
           <p class="card-text p-4">Description coming soon/p>
         </div>
-      </div>    
+      </div>     -->
 
     </div>  
   </div>
